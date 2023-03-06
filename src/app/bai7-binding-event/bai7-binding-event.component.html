@@ -6,15 +6,15 @@ Name:
 <button (click)="onSubmit(myName.value)">Submit</button>
 <hr />
 Nhập số a:
-<input type="number" #a />
+<input type="number" [(ngModel)]="a" />
 Nhập số b:
-<input type="number" #b />
+<input type="number" [(ngModel)]="b" />
 <hr />
-<button>Cộng</button>
-<button>Trừ</button>
-<button>Nhân</button>
-<button>Chia</button>
-<button>Xóa trắng</button>
+<button (click)="calculate('cong')">Cộng</button>
+<button (click)="calculate('tru')">Trừ</button>
+<button (click)="calculate('nhan')">Nhân</button>
+<button (click)="calculate('chia')">Chia</button>
+<button (click)="reset()">Xóa trắng</button>
 <hr />
 Kết quả:
-<input type="number" value="" />
+<input type="number" [value]="result" />

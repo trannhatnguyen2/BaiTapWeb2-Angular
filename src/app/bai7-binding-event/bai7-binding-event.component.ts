@@ -10,9 +10,32 @@ export class Bai7BindingEventComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  public a = 0;
+  public b = 0;
+  public result: any;
+
   onSubmit(value: string) {
     alert(value);
   }
 
-  onCalculate(numberA: Int32Array, numberB: Int32Array) {}
+  calculate(type: string): void {
+    if ((type = 'cong')) {
+      this.result = this.a + this.b;
+    }
+    if ((type = 'tru')) {
+      this.result = this.a - this.b;
+    }
+    if ((type = 'nhan')) {
+      this.result = this.a * this.b;
+    }
+    if ((type = 'chia')) {
+      this.result = this.a / this.b;
+    }
+  }
+
+  reset() {
+    this.a = 0;
+    this.b = 0;
+    this.result = '';
+  }
 }
