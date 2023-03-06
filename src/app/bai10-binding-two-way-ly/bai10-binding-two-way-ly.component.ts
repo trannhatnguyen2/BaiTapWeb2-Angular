@@ -76,5 +76,8 @@ export class Bai10BindingTwoWayLYComponent implements OnInit {
     '2025',
   ];
 
-  findLunarYearDetail() {}
+  public solarYear = 0;
+  public solarMonth = 0;
+  public solarDay = 0;
+  public longitude = 0;
 }

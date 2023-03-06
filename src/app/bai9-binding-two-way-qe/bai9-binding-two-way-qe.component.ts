@@ -18,11 +18,7 @@ export class Bai9BindingTwoWayQEComponent implements OnInit {
   public result: string = '';
 
   findSolution(): void {
-    let quadratic = {
-      soA: this.a,
-      soB: this.b,
-      soC: this.c,
-    };
+    let quadratic = new quadraticParam(this.a, this.b, this.c);
 
     let delta =
       quadratic.soB * quadratic.soB - 4 * quadratic.soA * quadratic.soC;
@@ -46,4 +42,8 @@ export class Bai9BindingTwoWayQEComponent implements OnInit {
     this.c = 0;
     this.result = '';
   }
+}
+
+class quadraticParam {
+  constructor(public soA: number, public soB: number, public soC: number) {}
 }
