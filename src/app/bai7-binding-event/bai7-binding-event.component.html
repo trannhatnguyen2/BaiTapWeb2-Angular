@@ -1,0 +1,20 @@
+<p>bai7-binding-event works!</p>
+
+Name:
+<input type="text" #myName />
+
+<button (click)="onSubmit(myName.value)">Submit</button>
+<hr />
+Nhập số a:
+<input type="number" #a />
+Nhập số b:
+<input type="number" #b />
+<hr />
+<button>Cộng</button>
+<button>Trừ</button>
+<button>Nhân</button>
+<button>Chia</button>
+<button>Xóa trắng</button>
+<hr />
+Kết quả:
+<input type="number" value="" />

@@ -1,0 +1,33 @@
+<p>bai9-binding-two-way-qe works!</p>
+
+<table>
+  <thead>
+    <th colspan="2">Giải phương trình bậc 2 online</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hệ số a</td>
+      <td><input [(ngModel)]="a" type="number" /></td>
+    </tr>
+    <tr></tr>
+    <tr>
+      <td>Hệ số b</td>
+      <td><input [(ngModel)]="b" type="number" /></td>
+    </tr>
+    <tr>
+      <td>Hệ số c</td>
+      <td><input [(ngModel)]="c" type="number" /></td>
+    </tr>
+    <tr>
+      <td>Kết quả</td>
+      <td><input type="text" [value]="result" /></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button (click)="findSolution()">Giải phương trình</button>
+        <button (click)="reset()">Xóa trắng</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
