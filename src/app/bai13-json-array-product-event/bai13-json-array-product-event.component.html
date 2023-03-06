@@ -1,1 +1,27 @@
 <p>bai13-json-array-product-event works!</p>
+
+<table border="1">
+  <thead>
+    <th>Mã sản phẩm</th>
+    <th>Tên sản phẩm</th>
+    <th>Giá sản phẩm</th>
+    <th>Picture</th>
+    <th>#Detail</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of products">
+      <td>{{ p.id }}</td>
+      <td>{{ p.name }}</td>
+      <td>{{ p.price }}đ</td>
+      <td><img src="{{ p.image }}" alt="" /></td>
+      <td>
+        <a
+          style="cursor: pointer"
+          (click)="viewDetail(p)"
+          title="Click here to view detail"
+          >Details</a
+        >
+      </td>
+    </tr>
+  </tbody>
+</table>

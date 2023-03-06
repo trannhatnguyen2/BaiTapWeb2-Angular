@@ -7,6 +7,17 @@ import { Bai6BindingStyleComponent } from './bai6-binding-style/bai6-binding-sty
 import { Bai7BindingEventComponent } from './bai7-binding-event/bai7-binding-event.component';
 import { Bai8BindingTwoWayComponent } from './bai8-binding-two-way/bai8-binding-two-way.component';
 import { Bai9BindingTwoWayQEComponent } from './bai9-binding-two-way-qe/bai9-binding-two-way-qe.component';
+import { Bai10BindingTwoWayLYComponent } from './bai10-binding-two-way-ly/bai10-binding-two-way-ly.component';
+import { Bai11JsonObjectProductComponent } from './bai11-json-object-product/bai11-json-object-product.component';
+import { Bai12JsonArrayProductComponent } from './bai12-json-array-product/bai12-json-array-product.component';
+import { Bai13JsonArrayProductEventComponent } from './bai13-json-array-product-event/bai13-json-array-product-event.component';
+import { Bai14JsonArrayProductCatalogComponent } from './bai14-json-array-product-catalog/bai14-json-array-product-catalog.component';
+import { Bai15JsonArrayProductHttpServiceComponent } from './bai15-json-array-product-http-service/bai15-json-array-product-http-service.component';
+import { Bai16JsonArrayProductHttpServiceHEComponent } from './bai16-json-array-product-http-service-he/bai16-json-array-product-http-service-he.component';
+import { Bai17JsonObjectCustomerServiceComponent } from './bai17-json-object-customer-service/bai17-json-object-customer-service.component';
+import { Bai18JsonArrayGroupCustomersComponent } from './bai18-json-array-group-customers/bai18-json-array-group-customers.component';
+import { Bai19RoutingPageNotFoundComponent } from './bai19-routing-page-not-found/bai19-routing-page-not-found.component';
+import { MyComponentComponent } from './my-component/my-component.component';
 
 const routes: Routes = [
   { path: 'bai 3', component: Bai3BindingComponent },
@@ -16,6 +27,17 @@ const routes: Routes = [
   { path: 'bai 7', component: Bai7BindingEventComponent },
   { path: 'bai 8', component: Bai8BindingTwoWayComponent },
   { path: 'bai 9', component: Bai9BindingTwoWayQEComponent },
+  { path: 'bai 10', component: Bai10BindingTwoWayLYComponent },
+  { path: 'bai 11', component: Bai11JsonObjectProductComponent },
+  { path: 'bai 12', component: Bai12JsonArrayProductComponent },
+  { path: 'bai 13', component: Bai13JsonArrayProductEventComponent },
+  { path: 'bai 14', component: Bai14JsonArrayProductCatalogComponent },
+  { path: 'bai 15', component: Bai15JsonArrayProductHttpServiceComponent },
+  { path: 'bai 16', component: Bai16JsonArrayProductHttpServiceHEComponent },
+  { path: 'bai 17', component: Bai17JsonObjectCustomerServiceComponent },
+  { path: 'bai 18', component: Bai18JsonArrayGroupCustomersComponent },
+  { path: 'bai 19', component: Bai19RoutingPageNotFoundComponent },
+  { path: 'bai 13/:id', component: MyComponentComponent },
 ];
 
 @NgModule({
@@ -31,4 +53,14 @@ export const RoutingComponents = [
   Bai7BindingEventComponent,
   Bai8BindingTwoWayComponent,
   Bai9BindingTwoWayQEComponent,
+  Bai10BindingTwoWayLYComponent,
+  Bai11JsonObjectProductComponent,
+  Bai12JsonArrayProductComponent,
+  Bai13JsonArrayProductEventComponent,
+  Bai14JsonArrayProductCatalogComponent,
+  Bai15JsonArrayProductHttpServiceComponent,
+  Bai16JsonArrayProductHttpServiceHEComponent,
+  Bai17JsonObjectCustomerServiceComponent,
+  Bai18JsonArrayGroupCustomersComponent,
+  Bai19RoutingPageNotFoundComponent,
 ];

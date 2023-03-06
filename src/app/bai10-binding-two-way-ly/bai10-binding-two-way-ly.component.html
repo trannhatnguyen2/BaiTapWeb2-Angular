@@ -1,1 +1,27 @@
 <p>bai10-binding-two-way-ly works!</p>
+
+<table>
+  <thead>
+    <th colspan="2">Chuyển đổi Dương lịch thành Âm lịch</th>
+  </thead>
+
+  <tbody>
+    <tr>
+      <select name="" id="">
+        <option *ngFor="let d of days" [ngValue]="d">{{ d }}</option>
+      </select>
+      Ngày
+      <select name="" id="">
+        <option *ngFor="let m of months" [ngValue]="m">{{ m }}</option>
+      </select>
+      Tháng
+      <select name="" id="">
+        <option *ngFor="let y of years" [ngValue]="y">{{ y }}</option>
+      </select>
+      Năm
+      <button>Chuyển đổi</button>
+    </tr>
+    <tr></tr>
+    <tr></tr>
+  </tbody>
+</table>

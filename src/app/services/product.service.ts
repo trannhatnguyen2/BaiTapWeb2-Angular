@@ -1,14 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'app-bai12-json-array-product',
-  templateUrl: './bai12-json-array-product.component.html',
-  styleUrls: ['./bai12-json-array-product.component.css'],
+@Injectable({
+  providedIn: 'root',
 })
-export class Bai12JsonArrayProductComponent implements OnInit {
+export class ProductService {
   constructor() {}
-
-  ngOnInit(): void {}
 
   products = [
     {
@@ -72,4 +68,12 @@ export class Bai12JsonArrayProductComponent implements OnInit {
       image: 'assets/img/butkemat.jpg',
     },
   ];
+
+  getProductWithImages() {
+    return this.products;
+  }
+
+  getProductDetail(id: any) {
+    return this.products.find((x) => x.id == id);
+  }
 }

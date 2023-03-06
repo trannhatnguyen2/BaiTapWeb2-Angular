@@ -1,1 +1,18 @@
 <p>bai12-json-array-product works!</p>
+
+<table>
+  <thead>
+    <th>Mã sản phẩm</th>
+    <th>Tên sản phẩm</th>
+    <th>Giá sản phẩm</th>
+    <th>Picture</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of products">
+      <td>{{ p.id }}</td>
+      <td>{{ p.name }}</td>
+      <td>{{ p.price }}đ</td>
+      <td><img src="{{ p.image }}" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
