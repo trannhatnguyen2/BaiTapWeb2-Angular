@@ -1,0 +1,73 @@
+<p>book-update works!</p>
+<p>{{ errMessage }}</p>
+<table>
+  <tr>
+    <td>Book Id:</td>
+    <td>
+      <input
+        type="text"
+        class="form-control"
+        #name="ngModel"
+        name="BookId"
+        id="BookId"
+        placeholder="Nhập Book Id"
+        [(ngModel)]="book.bookId"
+      />
+    </td>
+  </tr>
+  <tr>
+    <td>Book Name:</td>
+    <td>
+      <input
+        type="text"
+        class="form-control"
+        #name="ngModel"
+        name="BookName"
+        id="BookName"
+        placeholder="Nhập Book Name"
+        [(ngModel)]="book.bookName"
+      />
+    </td>
+  </tr>
+  <tr>
+    <td>Price:</td>
+    <td>
+      <input
+        type="text"
+        class="form-control"
+        #name="ngModel"
+        name="BookPrice"
+        id="BookPrice"
+        placeholder="Nhập Price"
+        [(ngModel)]="book.price"
+      />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <button (click)="putBook()">Update</button>
+    </td>
+  </tr>
+</table>
+<table border="1">
+  <tr>
+    <td>BookId</td>
+    <td>BookName</td>
+    <td>Price</td>
+    <td>Image</td>
+  </tr>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <td>{{ book.bookId }}</td>
+      <td>{{ book.bookName }}</td>
+      <td>{{ book.price }}</td>
+      <td>
+        <img
+          src="assets/img/{{ book.imageURL }}"
+          width="100px"
+          height="100px"
+        />
+      </td>
+    </tr>
+  </tbody>
+</table>

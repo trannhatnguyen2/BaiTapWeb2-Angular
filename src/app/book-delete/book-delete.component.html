@@ -1,0 +1,28 @@
+<p>book-delete works!</p>
+<p>{{ errMessage }}</p>
+Book Id: <input type="text" #bookId />
+<button (click)="deleteBook(bookId.value)">Delete Book</button>
+<br />
+<br />
+<table border="1">
+  <tr>
+    <td>BookId</td>
+    <td>BookName</td>
+    <td>Price</td>
+    <td>Image</td>
+  </tr>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <td>{{ book.bookId }}</td>
+      <td>{{ book.bookName }}</td>
+      <td>{{ book.price }}</td>
+      <td>
+        <img
+          src="assets/img/{{ book.imageURL }}"
+          width="100px"
+          height="100px"
+        />
+      </td>
+    </tr>
+  </tbody>
+</table>
