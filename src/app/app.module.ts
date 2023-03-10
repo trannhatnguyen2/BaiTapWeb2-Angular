@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule, RoutingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +23,13 @@ import { Bai16JsonArrayProductHttpServiceHEComponent } from './bai16-json-array-
 import { Bai19RoutingPageNotFoundComponent } from './bai19-routing-page-not-found/bai19-routing-page-not-found.component';
 import { Bai18JsonArrayGroupCustomersComponent } from './bai18-json-array-group-customers/bai18-json-array-group-customers.component';
 import { Bai17JsonObjectCustomerServiceComponent } from './bai17-json-object-customer-service/bai17-json-object-customer-service.component';
+import { BooksComponent } from './books/books.component';
+import { Bai43HttpGetListOfBooksComponent } from './bai43-http-get-list-of-books/bai43-http-get-list-of-books.component';
+import { BookDetailComponent } from './book-detail/book-detail.component';
+import { Bai46HttpPostCreateBookComponent } from './bai46-http-post-create-book/bai46-http-post-create-book.component';
+import { BookNewComponent } from './book-new/book-new.component';
+import { BookUpdateComponent } from './book-update/book-update.component';
+import { BookDeleteComponent } from './book-delete/book-delete.component';
 
 @NgModule({
   declarations: [
@@ -45,8 +53,15 @@ import { Bai17JsonObjectCustomerServiceComponent } from './bai17-json-object-cus
     Bai19RoutingPageNotFoundComponent,
     Bai18JsonArrayGroupCustomersComponent,
     Bai17JsonObjectCustomerServiceComponent,
+    BooksComponent,
+    Bai43HttpGetListOfBooksComponent,
+    BookDetailComponent,
+    Bai46HttpPostCreateBookComponent,
+    BookNewComponent,
+    BookUpdateComponent,
+    BookDeleteComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

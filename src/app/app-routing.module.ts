@@ -18,6 +18,12 @@ import { Bai17JsonObjectCustomerServiceComponent } from './bai17-json-object-cus
 import { Bai18JsonArrayGroupCustomersComponent } from './bai18-json-array-group-customers/bai18-json-array-group-customers.component';
 import { Bai19RoutingPageNotFoundComponent } from './bai19-routing-page-not-found/bai19-routing-page-not-found.component';
 import { MyComponentComponent } from './my-component/my-component.component';
+import { Bai43HttpGetListOfBooksComponent } from './bai43-http-get-list-of-books/bai43-http-get-list-of-books.component';
+import { BooksComponent } from './books/books.component';
+import { BookDetailComponent } from './book-detail/book-detail.component';
+import { BookNewComponent } from './book-new/book-new.component';
+import { BookUpdateComponent } from './book-update/book-update.component';
+import { BookDeleteComponent } from './book-delete/book-delete.component';
 
 const routes: Routes = [
   { path: 'bai 3', component: Bai3BindingComponent },
@@ -38,6 +44,12 @@ const routes: Routes = [
   { path: 'bai 18', component: Bai18JsonArrayGroupCustomersComponent },
   { path: 'bai 19', component: Bai19RoutingPageNotFoundComponent },
   { path: 'bai 13/:id', component: MyComponentComponent },
+  { path: 'bai 43/books', component: Bai43HttpGetListOfBooksComponent },
+  { path: 'books', component: BooksComponent },
+  { path: 'book-detail', component: BookDetailComponent },
+  { path: 'book-new', component: BookNewComponent },
+  { path: 'book-update', component: BookUpdateComponent },
+  { path: 'book-delete', component: BookDeleteComponent },
 ];
 
 @NgModule({
@@ -63,4 +75,11 @@ export const RoutingComponents = [
   Bai17JsonObjectCustomerServiceComponent,
   Bai18JsonArrayGroupCustomersComponent,
   Bai19RoutingPageNotFoundComponent,
+  MyComponentComponent,
+  Bai43HttpGetListOfBooksComponent,
+  BooksComponent,
+  BookDetailComponent,
+  BookNewComponent,
+  BookUpdateComponent,
+  BookDeleteComponent,
 ];
