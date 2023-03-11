@@ -9,11 +9,11 @@
   </tr>
   <tbody>
     <tr *ngFor="let book of books">
-      <td>{{ book.BookId }}</td>
-      <td>{{ book.BookName }}</td>
-      <td>{{ book.Price }}</td>
+      <td>{{ book.bookId }}</td>
+      <td>{{ book.bookName }}</td>
+      <td>{{ book.price }}</td>
       <td>
-        <img src="assets/img/{{ book.Image }}" width="50px" height="50px" />
+        <img src="assets/img/{{ book.imageURL }}" width="50px" height="50px" />
       </td>
     </tr>
   </tbody>
