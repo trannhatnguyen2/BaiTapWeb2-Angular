@@ -31,6 +31,9 @@ import { BookNewComponent } from './book-new/book-new.component';
 import { BookUpdateComponent } from './book-update/book-update.component';
 import { BookDeleteComponent } from './book-delete/book-delete.component';
 import { Bai54BaitapTonghopRestfulApiComponent } from './bai54-baitap-tonghop-restful-api/bai54-baitap-tonghop-restful-api.component';
+import { Bai54BookDetailComponent } from './bai54-book-detail/bai54-book-detail.component';
+import { Bai54BookCreateComponent } from './bai54-book-create/bai54-book-create.component';
+import { Bai54BookUpdateComponent } from './bai54-book-update/bai54-book-update.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +65,9 @@ import { Bai54BaitapTonghopRestfulApiComponent } from './bai54-baitap-tonghop-re
     BookUpdateComponent,
     BookDeleteComponent,
     Bai54BaitapTonghopRestfulApiComponent,
+    Bai54BookDetailComponent,
+    Bai54BookCreateComponent,
+    Bai54BookUpdateComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

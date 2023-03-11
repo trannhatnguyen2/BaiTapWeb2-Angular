@@ -22,7 +22,9 @@ export class BookBai54 {
     public giaBan: number = 0,
     public moTa: string = '',
     public anhBia: string = '',
-    public ngayCapNhat: string = Date.now.toString(),
+    public ngayCapNhat: string = `${new Date().getDate()}-${
+      new Date().getMonth() + 1
+    }-${new Date().getFullYear()}`,
     public soLuongTon: number = 0,
     public maCD: string = '',
     public maNXB: string = '',

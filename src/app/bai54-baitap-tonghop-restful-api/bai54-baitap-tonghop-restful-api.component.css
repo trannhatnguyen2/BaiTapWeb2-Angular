@@ -5,3 +5,35 @@ tbody button {
   color: blue;
   font-style: unset;
 }
+
+.form-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.btn-create {
+  display: flex;
+  justify-content: end;
+}
+
+.btn-create button {
+  height: 40px;
+  width: 100px;
+}
+
+thead,
+tbody,
+th,
+tr,
+td {
+  border: 2px solid black;
+}
+
+th,
+td {
+  text-align: center;
+}

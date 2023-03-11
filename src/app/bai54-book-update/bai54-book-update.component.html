@@ -1,0 +1,103 @@
+<p>bai54-book-update works!</p>
+<div class="form-container">
+  <h2>Thông tin sách</h2>
+  <div>
+    <label for="">Mã sách</label>
+    <input
+      type="text"
+      value="{{ selectedBook.maSach }}"
+      disabled
+      [(ngModel)]="selectedBook.maSach"
+    />
+    <label for="">Mã sách</label>
+    <input
+      style="width: 540px"
+      type="text"
+      value="{{ selectedBook.tenSach }}"
+      [(ngModel)]="selectedBook.tenSach"
+    />
+  </div>
+  <div>
+    <label for="">Tác giả</label>
+    <input
+      type="text"
+      value="{{ selectedBook.tacGia }}"
+      [(ngModel)]="selectedBook.tacGia"
+    />
+    <label for="">Giá bán</label>
+    <input
+      type="number"
+      value="{{ selectedBook.giaBan }}"
+      [(ngModel)]="selectedBook.giaBan"
+    />
+    <label for="">Số lượng tồn</label>
+    <input
+      type="number"
+      value="{{ selectedBook.soLuongTon }}"
+      [(ngModel)]="selectedBook.soLuongTon"
+    />
+  </div>
+  <div>
+    <label for="">Mã NXB</label>
+    <input
+      type="text"
+      value="{{ selectedBook.maNXB }}"
+      [(ngModel)]="selectedBook.maNXB"
+    />
+    <label for="">Nhà xuất bản</label>
+    <input
+      style="width: 540px"
+      type="text"
+      value="{{ selectedBook.nhaXuatBan }}"
+      [(ngModel)]="selectedBook.nhaXuatBan"
+    />
+  </div>
+  <div>
+    <label for="">Kích thước</label>
+    <input
+      type="text"
+      value="{{ selectedBook.kichThuoc }}"
+      [(ngModel)]="selectedBook.kichThuoc"
+    />
+    <label for="">Số trang</label>
+    <input
+      type="number"
+      value="{{ selectedBook.soTrang }}"
+      [(ngModel)]="selectedBook.soTrang"
+    />
+    <label for="">Tình trạng</label>
+    <input
+      type="text"
+      value="{{ selectedBook.tinhTrang }}"
+      [(ngModel)]="selectedBook.tinhTrang"
+    />
+  </div>
+  <div style="display: flex">
+    <label for="">Mô tả</label>
+    <textarea
+      name=""
+      id=""
+      value="{{ selectedBook.moTa }}"
+      [(ngModel)]="selectedBook.moTa"
+    ></textarea>
+  </div>
+
+  <div style="display: flex; justify-content: center">
+    <img
+      src="http://localhost:3000/image/{{ selectedBook.anhBia }}"
+      alt=""
+      width="200px"
+      height="200px"
+    />
+  </div>
+
+  <div style="display: flex; justify-content: end">
+    <button
+      (click)="goBack()"
+      style="margin-right: 20px; width: 100px; height: 40px"
+    >
+      Quay về
+    </button>
+    <button (click)="putBook()" style="width: 100px; height: 40px">Sửa</button>
+  </div>
+</div>

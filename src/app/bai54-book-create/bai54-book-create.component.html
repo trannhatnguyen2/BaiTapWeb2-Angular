@@ -1,0 +1,77 @@
+<p>bai54-book-create works!</p>
+<div class="form-container">
+  <h2>Tạo mới sách</h2>
+  <div>
+    <label for="">Mã sách</label>
+    <input [(ngModel)]="book.maSach" type="text" />
+    <label for="">Tên sách</label>
+    <input [(ngModel)]="book.tenSach" style="width: 540px" type="text" />
+  </div>
+  <div>
+    <label for="">Tác giả</label>
+    <input [(ngModel)]="book.tacGia" type="text" />
+    <label for="">Giá bán</label>
+    <input [(ngModel)]="book.giaBan" type="number" />
+    <label for="">Số lượng tồn</label>
+    <input [(ngModel)]="book.soLuongTon" type="number" />
+  </div>
+  <div>
+    <label for="">Mã NXB</label>
+    <input [(ngModel)]="book.maNXB" type="text" />
+    <label for="">Nhà xuất bản</label>
+    <input [(ngModel)]="book.nhaXuatBan" style="width: 540px" type="text" />
+  </div>
+  <div>
+    <label for="">Kích thước</label>
+    <input [(ngModel)]="book.kichThuoc" type="text" />
+    <label for="">Số trang</label>
+    <input [(ngModel)]="book.soTrang" type="number" />
+    <label for="">Tình trạng</label>
+    <input [(ngModel)]="book.tinhTrang" type="text" />
+  </div>
+  <div style="display: flex">
+    <label for="">Mô tả</label>
+    <textarea name="" id="" [(ngModel)]="book.moTa"></textarea>
+  </div>
+
+  <div>
+    <label for="">Ảnh bìa</label>
+    <input
+      type="file"
+      class="file-input"
+      (change)="onFileSelected($event)"
+      #fileUpload
+      [(ngModel)]="imageURL"
+      name="image"
+    />
+    <!-- <div class="file-upload">
+      {{ fileName || "No file uploaded yet." }}
+      <button
+        mat-mini-fab
+        color="primary"
+        class="upload-btn"
+        (click)="fileUpload.click()"
+      >
+        Upload
+      </button>
+    </div> -->
+    <!-- <img
+      src="http://localhost:3000/image/{{ imageURL }}"
+      alt=""
+      width="200px"
+      height="200px"
+    /> -->
+  </div>
+
+  <div style="display: flex; justify-content: end">
+    <button
+      (click)="goBack()"
+      style="margin-right: 20px; width: 100px; height: 40px"
+    >
+      Quay về
+    </button>
+    <button (click)="postBook()" style="width: 100px; height: 40px">
+      Tạo mới
+    </button>
+  </div>
+</div>
