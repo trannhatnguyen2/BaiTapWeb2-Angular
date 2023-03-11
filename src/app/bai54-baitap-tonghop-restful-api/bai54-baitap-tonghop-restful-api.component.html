@@ -1,0 +1,36 @@
+<p>bai54-baitap-tonghop-restful-api works!</p>
+<p>{{ errMessage }}</p>
+<br />
+<br />
+<h1>QUẢN LÝ THÔNG TIN SÁCH</h1>
+<button>Create New</button>
+<table border="1">
+  <thead>
+    <th>Tên Sách</th>
+    <th>Giá Bán</th>
+    <th>Mô Tả</th>
+    <th>Ảnh Bìa</th>
+    <th>Ngày cập nhật</th>
+    <th>Số lượng tồn</th>
+    <th>Mã CD</th>
+    <th>Mã NXB</th>
+    <th></th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let b of books">
+      <td>{{ b.tenSach }}</td>
+      <td>{{ b.giaBan }}</td>
+      <td>{{ b.moTa }}</td>
+      <td>{{ b.anhBia }}</td>
+      <td>{{ b.ngayCapNhat }}</td>
+      <td>{{ b.soLuongTon }}</td>
+      <td>{{ b.maCD }}</td>
+      <td>{{ b.maNXB }}</td>
+      <td>
+        <button (click)="putBook()">Edit</button> |
+        <button (click)="searchBook(b.maSach)">Details</button> |
+        <button (click)="deleteBook(b.maSach)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
