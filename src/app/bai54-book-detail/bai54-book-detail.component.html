@@ -1,0 +1,61 @@
+<p>bai54-book-detail works!</p>
+<div class="form-container">
+  <h2>Thông tin sách</h2>
+  <div>
+    <label for="">Mã sách</label>
+    <input type="text" disabled value="{{ selectedBook.maSach }}" />
+    <label for="">Mã sách</label>
+    <input
+      style="width: 540px"
+      type="text"
+      disabled
+      value="{{ selectedBook.tenSach }}"
+    />
+  </div>
+  <div>
+    <label for="">Tác giả</label>
+    <input type="text" disabled value="{{ selectedBook.tacGia }}" />
+    <label for="">Giá bán</label>
+    <input type="text" disabled value="{{ selectedBook.giaBan }}" />
+    <label for="">Số lượng tồn</label>
+    <input type="text" disabled value="{{ selectedBook.soLuongTon }}" />
+  </div>
+  <div>
+    <label for="">Mã NXB</label>
+    <input type="text" disabled value="{{ selectedBook.maNXB }}" />
+    <label for="">Nhà xuất bản</label>
+    <input
+      style="width: 540px"
+      type="text"
+      disabled
+      value="{{ selectedBook.nhaXuatBan }}"
+    />
+  </div>
+  <div>
+    <label for="">Kích thước</label>
+    <input type="text" disabled value="{{ selectedBook.kichThuoc }}" />
+    <label for="">Số trang</label>
+    <input type="text" disabled value="{{ selectedBook.soTrang }}" />
+    <label for="">Tình trạng</label>
+    <input type="text" disabled value="{{ selectedBook.tinhTrang }}" />
+  </div>
+  <div style="display: flex">
+    <label for="">Mô tả</label>
+    <textarea name="" id="" disabled value="{{ selectedBook.moTa }}"></textarea>
+  </div>
+
+  <div style="display: flex; justify-content: center">
+    <img
+      src="http://localhost:3000/image/{{ selectedBook.anhBia }}"
+      alt=""
+      width="200px"
+      height="200px"
+    />
+  </div>
+
+  <div style="display: flex; justify-content: end">
+    <button (click)="goBack()" style="width: 100px; height: 40px">
+      Quay về
+    </button>
+  </div>
+</div>

@@ -25,6 +25,9 @@ import { BookNewComponent } from './book-new/book-new.component';
 import { BookUpdateComponent } from './book-update/book-update.component';
 import { BookDeleteComponent } from './book-delete/book-delete.component';
 import { Bai54BaitapTonghopRestfulApiComponent } from './bai54-baitap-tonghop-restful-api/bai54-baitap-tonghop-restful-api.component';
+import { Bai54BookDetailComponent } from './bai54-book-detail/bai54-book-detail.component';
+import { Bai54BookCreateComponent } from './bai54-book-create/bai54-book-create.component';
+import { Bai54BookUpdateComponent } from './bai54-book-update/bai54-book-update.component';
 
 const routes: Routes = [
   { path: 'bai 3', component: Bai3BindingComponent },
@@ -52,6 +55,9 @@ const routes: Routes = [
   { path: 'book-update', component: BookUpdateComponent },
   { path: 'book-delete', component: BookDeleteComponent },
   { path: 'bai 54', component: Bai54BaitapTonghopRestfulApiComponent },
+  { path: 'bai 54/book-detail/:id', component: Bai54BookDetailComponent },
+  { path: 'bai 54/book-create', component: Bai54BookCreateComponent },
+  { path: 'bai 54/book-update/:id', component: Bai54BookUpdateComponent },
 ];
 
 @NgModule({
@@ -85,4 +91,7 @@ export const RoutingComponents = [
   BookUpdateComponent,
   BookDeleteComponent,
   Bai54BaitapTonghopRestfulApiComponent,
+  Bai54BookDetailComponent,
+  Bai54BookCreateComponent,
+  Bai54BookUpdateComponent,
 ];

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BookBai54 } from '../interfaces/book_bai54';
 import { BookApiBai54Service } from '../services/book-api-bai54.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-bai54-baitap-tonghop-restful-api',
@@ -12,7 +13,7 @@ export class Bai54BaitapTonghopRestfulApiComponent implements OnInit {
   books: any;
   errMessage: string = '';
 
-  constructor(private _bService: BookApiBai54Service) {
+  constructor(private _bService: BookApiBai54Service, private _router: Router) {
     _bService.getBooks().subscribe({
       next: (data) => {
         this.books = data;
@@ -25,41 +26,6 @@ export class Bai54BaitapTonghopRestfulApiComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  searchBook(bookId: string) {
-    this._bService.getBook(bookId).subscribe({
-      next: (data) => {
-        this.book = data;
-      },
-      error: (err) => {
-        this.errMessage = err;
-      },
-    });
-  }
-
-  // create new book
-  postBook() {
-    this._bService.postBook(this.book).subscribe({
-      next: (data) => {
-        this.books = data;
-      },
-      error: (err) => {
-        this.errMessage = err;
-      },
-    });
-  }
-
-  // update book
-  putBook() {
-    this._bService.putBook(this.book).subscribe({
-      next: (data) => {
-        this.books = data;
-      },
-      error: (err) => {
-        this.errMessage = err;
-      },
-    });
-  }
-
   // remove book
   deleteBook(bookId: any) {
     this._bService.deleteBook(bookId).subscribe({
@@ -70,5 +36,24 @@ export class Bai54BaitapTonghopRestfulApiComponent implements OnInit {
         this.errMessage = err;
       },
     });
+  }
+
+  createBook() {
+    this._router.navigate(['bai 54/book-create']);
+  }
+
+  viewDetail(f: any) {
+    this._router.navigate(['bai 54/book-detail', f.maSach]);
+  }
+
+  updateBook(f: any) {
+    this._router.navigate(['bai 54/book-update', f.maSach]);
+  }
+
+  delete(maSach: any) {
+    if (window.confirm('Are sure you want to delete this item ?')) {
+      //put your delete method logic here
+      this.deleteBook(maSach);
+    }
   }
 }
