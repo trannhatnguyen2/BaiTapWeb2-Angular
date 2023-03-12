@@ -1,1 +1,38 @@
 <p>bai14-json-array-product-catalog works!</p>
+<table border="1">
+  <thead>
+    <th style="width: 200px">Mã Danh Mục</th>
+    <th style="width: 200px">Tên Danh Mục</th>
+  </thead>
+
+  <tr>
+    <td colspan="2">
+      <table *ngFor="let c of data" border=" 1">
+        <tr>
+          <td style="width: 200px">{{ c.Cateid }}</td>
+          <td style="width: 200px">{{ c.CateName }}</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table border="1">
+              <tr>
+                <td>Mã Sản Phẩm</td>
+                <td>Tên Sản Phẩm</td>
+                <td>Giá Sản Phẩm</td>
+                <td>Picture</td>
+              </tr>
+              <tr *ngFor="let p of c.Products">
+                <td>{{ p.ProductId }}</td>
+                <td>{{ p.ProductName }}</td>
+                <td>{{ p.Price }}</td>
+                <td>
+                  <img src="assets/img/{{ p.Image }}" alt="" />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

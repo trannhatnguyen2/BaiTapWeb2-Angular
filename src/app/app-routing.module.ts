@@ -46,7 +46,7 @@ const routes: Routes = [
   { path: 'bai 16', component: Bai16JsonArrayProductHttpServiceHEComponent },
   { path: 'bai 17', component: Bai17JsonObjectCustomerServiceComponent },
   { path: 'bai 18', component: Bai18JsonArrayGroupCustomersComponent },
-  { path: 'bai 19', component: Bai19RoutingPageNotFoundComponent },
+  { path: '**', component: Bai19RoutingPageNotFoundComponent },
   { path: 'bai 13/:id', component: MyComponentComponent },
   { path: 'bai 43/books', component: Bai43HttpGetListOfBooksComponent },
   { path: 'books', component: BooksComponent },
