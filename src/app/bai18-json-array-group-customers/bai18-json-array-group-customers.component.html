@@ -1,1 +1,43 @@
 <p>bai18-json-array-group-customers works!</p>
+<table border="1">
+  <thead>
+    <th style="width: 120px">Id</th>
+    <th style="width: 120px">Name</th>
+    <th style="width: 120px">Email</th>
+    <th style="width: 120px">Age</th>
+    <th style="width: 240px">#</th>
+  </thead>
+
+  <tr>
+    <td colspan="5">
+      <table *ngFor="let c of customers" border="1">
+        <tr>
+          <td colspan="5">
+            {{ c.CustomerTypeId }} - {{ c.CustomterTypeName }}
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="5">
+            <table *ngFor="let cd of c.Customers" border="1">
+              <tr>
+                <td style="width: 120px">{{ cd.Id }}</td>
+                <td style="width: 120px">{{ cd.Name }}</td>
+                <td style="width: 120px">{{ cd.Email }}</td>
+                <td style="width: 120px">{{ cd.Age }}</td>
+                <td style="width: 240px">
+                  <img
+                    src="assets/img/{{ cd.Image }}"
+                    alt=""
+                    height="240px"
+                    width="200px"
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
