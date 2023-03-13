@@ -1,0 +1,46 @@
+<p>bai21-login-screen works!</p>
+<div class="container">
+  <h2>Thông tin hệ thống Teacher</h2>
+  <hr />
+  <form action="" #loginFrom="ngForm">
+    <div class="form__container">
+      <div class="logo">
+        <img src="assets/img/logo-fis.png" alt="" />
+      </div>
+      <div class="login">
+        <div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            [(ngModel)]="account.email"
+          />
+        </div>
+        <div>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            [(ngModel)]="account.password"
+          />
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="check"
+            id="check"
+            [(ngModel)]="checked"
+          />
+        </div>
+        <div>
+          <button (click)="login()">Đăng nhập</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <hr />
+  <p *ngIf="isPress" style="color: red">{{ account | json }}</p>
+</div>

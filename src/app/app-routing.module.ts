@@ -28,6 +28,15 @@ import { Bai54BaitapTonghopRestfulApiComponent } from './bai54-baitap-tonghop-re
 import { Bai54BookDetailComponent } from './bai54-book-detail/bai54-book-detail.component';
 import { Bai54BookCreateComponent } from './bai54-book-create/bai54-book-create.component';
 import { Bai54BookUpdateComponent } from './bai54-book-update/bai54-book-update.component';
+import { Bai30ExternalApiProductService1Component } from './bai30-external-api-product-service1/bai30-external-api-product-service1.component';
+import { Bai31ExternalApiProductService2Component } from './bai31-external-api-product-service2/bai31-external-api-product-service2.component';
+import { Bai32CoindeskApiComponent } from './bai32-coindesk-api/bai32-coindesk-api.component';
+import { Bai33GetListPublicApisComponent } from './bai33-get-list-public-apis/bai33-get-list-public-apis.component';
+import { Bai34PredictTheGenderComponent } from './bai34-predict-the-gender/bai34-predict-the-gender.component';
+import { Bai35GetUsPublicApiComponent } from './bai35-get-us-public-api/bai35-get-us-public-api.component';
+import { Bai36RandomDogImagesApiComponent } from './bai36-random-dog-images-api/bai36-random-dog-images-api.component';
+import { Bai29ExternalApiNganhangdongaComponent } from './bai29-external-api-nganhangdonga/bai29-external-api-nganhangdonga.component';
+import { Bai21LoginScreenComponent } from './bai21-login-screen/bai21-login-screen.component';
 
 const routes: Routes = [
   { path: 'bai 3', component: Bai3BindingComponent },
@@ -41,12 +50,21 @@ const routes: Routes = [
   { path: 'bai 11', component: Bai11JsonObjectProductComponent },
   { path: 'bai 12', component: Bai12JsonArrayProductComponent },
   { path: 'bai 13', component: Bai13JsonArrayProductEventComponent },
+  { path: 'bai 13/:id', component: MyComponentComponent },
   { path: 'bai 14', component: Bai14JsonArrayProductCatalogComponent },
   { path: 'bai 15', component: Bai15JsonArrayProductHttpServiceComponent },
   { path: 'bai 16', component: Bai16JsonArrayProductHttpServiceHEComponent },
   { path: 'bai 17', component: Bai17JsonObjectCustomerServiceComponent },
   { path: 'bai 18', component: Bai18JsonArrayGroupCustomersComponent },
-  { path: 'bai 13/:id', component: MyComponentComponent },
+  { path: 'bai 21', component: Bai21LoginScreenComponent },
+  { path: 'bai 29', component: Bai29ExternalApiNganhangdongaComponent },
+  { path: 'bai 30', component: Bai30ExternalApiProductService1Component },
+  { path: 'bai 31', component: Bai31ExternalApiProductService2Component },
+  { path: 'bai 32', component: Bai32CoindeskApiComponent },
+  { path: 'bai 33', component: Bai33GetListPublicApisComponent },
+  { path: 'bai 34', component: Bai34PredictTheGenderComponent },
+  { path: 'bai 35', component: Bai35GetUsPublicApiComponent },
+  { path: 'bai 36', component: Bai36RandomDogImagesApiComponent },
   { path: 'bai 43/books', component: Bai43HttpGetListOfBooksComponent },
   { path: 'books', component: BooksComponent },
   { path: 'book-detail', component: BookDetailComponent },
@@ -83,6 +101,15 @@ export const RoutingComponents = [
   Bai17JsonObjectCustomerServiceComponent,
   Bai18JsonArrayGroupCustomersComponent,
   Bai19RoutingPageNotFoundComponent,
+  Bai21LoginScreenComponent,
+  Bai29ExternalApiNganhangdongaComponent,
+  Bai30ExternalApiProductService1Component,
+  Bai31ExternalApiProductService2Component,
+  Bai32CoindeskApiComponent,
+  Bai33GetListPublicApisComponent,
+  Bai34PredictTheGenderComponent,
+  Bai35GetUsPublicApiComponent,
+  Bai36RandomDogImagesApiComponent,
   MyComponentComponent,
   Bai43HttpGetListOfBooksComponent,
   BooksComponent,

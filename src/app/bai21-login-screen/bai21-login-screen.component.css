@@ -1,0 +1,47 @@
+.container {
+  width: 400px;
+  margin: 0 auto;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 2px grey;
+}
+
+.form__container {
+  display: flex;
+  flex: 1;
+}
+
+h2 {
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+.login {
+  flex: 1;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.login > div {
+  padding: 5px;
+}
+
+input {
+  width: 80%;
+}
+
+button {
+  width: 80%;
+}
