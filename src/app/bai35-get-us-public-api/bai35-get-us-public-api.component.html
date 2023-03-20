@@ -1,1 +1,73 @@
 <p>bai35-get-us-public-api works!</p>
+<div class="container">
+  <h4>Source</h4>
+  <table border="1" class="source">
+    <tr>
+      <td class="title">measures</td>
+      <td colspan="2">{{ source.measures[0] }}</td>
+    </tr>
+    <tr>
+      <td rowspan="7" class="title">annotations</td>
+      <td class="subtitle">source_name</td>
+      <td>{{ source.annotations.source_name }}</td>
+    </tr>
+    <tr>
+      <td class="subtitle">source_description</td>
+      <td>{{ source.annotations.source_description }}</td>
+    </tr>
+    <tr>
+      <td class="subtitle">dataset_name</td>
+      <td>{{ source.annotations.dataset_name }}</td>
+    </tr>
+    <tr>
+      <td class="subtitle">dataset_link</td>
+      <td>{{ source.annotations.dataset_link }}</td>
+    </tr>
+    <tr>
+      <td class="subtitle">table_id</td>
+      <td>{{ source.annotations.table_id }}</td>
+    </tr>
+    <tr>
+      <td class="subtitle">topic</td>
+      <td>{{ source.annotations.topic }}</td>
+    </tr>
+    <tr>
+      <td class="subtitle">subtopic</td>
+      <td>{{ source.annotations.subtopic }}</td>
+    </tr>
+    <tr>
+      <td class="title">name</td>
+      <td colspan="2">{{ source.name }}</td>
+    </tr>
+    <tr>
+      <td class="title">substitutions</td>
+      <td colspan="2">{{ source.substitutions }}</td>
+    </tr>
+  </table>
+  <br />
+  <br />
+  <h4>Data</h4>
+  <table class="data">
+    <thead>
+      <tr class="title">
+        <th>ID Nation</th>
+        <th>Nation</th>
+        <th>ID Year</th>
+        <th>Year</th>
+        <th>Population</th>
+        <th>Slug Nation</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let n of data" class="row-hover">
+        <td>{{ n["ID Nation"] }}</td>
+        <td>{{ n["Nation"] }}</td>
+        <td>{{ n["ID Year"] }}</td>
+        <td>{{ n["Year"] }}</td>
+        <td>{{ n["Population"] }}</td>
+        <td>{{ n["Slug Nation"] }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

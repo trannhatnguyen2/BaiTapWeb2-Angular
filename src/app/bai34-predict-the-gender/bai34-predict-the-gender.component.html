@@ -1,1 +1,36 @@
 <p>bai34-predict-the-gender works!</p>
+<div class="container">
+  <h3>Dự đoán giới tính theo tên</h3>
+
+  <hr />
+
+  <div class="form_input">
+    <label for="">Nhập tên:</label>
+    <div class="input-section">
+      <input type="text" [(ngModel)]="name" />
+    </div>
+    <div class="button-section">
+      <button (click)="checkGender()">Kiểm tra</button>
+    </div>
+    <div class="button-section" style="margin-left: 20px">
+      <button (click)="name = ''; gender = ''; probability = ''">Reset</button>
+    </div>
+  </div>
+
+  <hr />
+
+  <h3>Kết quả</h3>
+  <div class="result">
+    <div class="form_input">
+      <label for="">Giới tính:</label>
+      <div class="input-section">
+        <input type="text" disabled [(ngModel)]="gender" />
+      </div>
+
+      <label for="">Xác suất:</label>
+      <div class="input-section">
+        <input type="text" disabled [(ngModel)]="probability" />
+      </div>
+    </div>
+  </div>
+</div>

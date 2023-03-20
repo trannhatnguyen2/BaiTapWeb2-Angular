@@ -1,0 +1,33 @@
+.container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid crimson;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.body-random {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  height: 500px;
+  width: 400px;
+}
+
+h3 {
+  color: #e21818;
+}
+
+button {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

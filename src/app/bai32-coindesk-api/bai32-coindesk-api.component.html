@@ -1,1 +1,44 @@
 <p>bai32-coindesk-api works!</p>
+<p>{{ errMessage }}</p>
+
+<div class="container">
+  <h2>{{ data.chartName }}</h2>
+  <p>{{ data.disclaimer }}</p>
+
+  <table border="1">
+    <thead>
+      <th></th>
+      <th>code</th>
+      <th>symbol</th>
+      <th>rate</th>
+      <th>description</th>
+      <th>rate_float</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="title">USD</td>
+        <td>{{ bpi.USD.code }}</td>
+        <td>{{ bpi.USD.symbol }}</td>
+        <td>{{ bpi.USD.rate }}</td>
+        <td>{{ bpi.USD.description }}</td>
+        <td>{{ bpi.USD.rate_float }}</td>
+      </tr>
+      <tr>
+        <td class="title">GBP</td>
+        <td>{{ bpi.GBP.code }}</td>
+        <td>{{ bpi.GBP.symbol }}</td>
+        <td>{{ bpi.GBP.rate }}</td>
+        <td>{{ bpi.GBP.description }}</td>
+        <td>{{ bpi.GBP.rate_float }}</td>
+      </tr>
+      <tr>
+        <td class="title">EUR</td>
+        <td>{{ bpi.EUR.code }}</td>
+        <td>{{ bpi.EUR.symbol }}</td>
+        <td>{{ bpi.EUR.rate }}</td>
+        <td>{{ bpi.EUR.description }}</td>
+        <td>{{ bpi.EUR.rate_float }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,27 @@
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.title {
+  font-weight: bold;
+  background-color: crimson;
+  color: white;
+}
+
+.subtitle {
+  font-weight: bold;
+  background-color: rgb(227, 157, 171);
+}
+
+.row-hover:hover {
+  background-color: rgb(230, 193, 201);
+}

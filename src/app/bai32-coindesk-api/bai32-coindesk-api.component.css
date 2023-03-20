@@ -1,0 +1,17 @@
+table,
+tr,
+td,
+th {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.title,
+th {
+  background-color: gold;
+  font-weight: bold;
+}
+
+h2 {
+  color: crimson;
+}

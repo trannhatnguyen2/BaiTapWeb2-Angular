@@ -1,1 +1,31 @@
 <p>bai33-get-list-public-apis works!</p>
+<p>{{ errMessage }}</p>
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th>API</th>
+        <th>Description</th>
+        <th>Auth</th>
+        <th>HTTPS</th>
+        <th>Cors</th>
+        <th>Link</th>
+        <th>Category</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let api of data">
+        <td>{{ api.API }}</td>
+        <td>{{ api.Description }}</td>
+        <td>{{ api.Auth }}</td>
+        <td>{{ api.HTTPS }}</td>
+        <td>{{ api.Cors }}</td>
+        <td>
+          {{ api.Link }}
+        </td>
+        <td>{{ api.Category }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

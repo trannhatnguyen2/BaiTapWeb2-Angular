@@ -1,0 +1,28 @@
+.container {
+  width: 40%;
+  border: 5px solid crimson;
+  box-shadow: 10px 10px 10px gold;
+  padding: 20px;
+  background-color: beige;
+}
+
+h3 {
+  text-align: center;
+}
+
+.form_input {
+  display: flex;
+}
+
+.form_input label {
+  padding-right: 20px;
+}
+
+.input-section {
+  padding-right: 20px;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+}

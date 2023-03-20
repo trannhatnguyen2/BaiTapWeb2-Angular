@@ -43,6 +43,11 @@ import { Bai34PredictTheGenderComponent } from './bai34-predict-the-gender/bai34
 import { Bai35GetUsPublicApiComponent } from './bai35-get-us-public-api/bai35-get-us-public-api.component';
 import { Bai36RandomDogImagesApiComponent } from './bai36-random-dog-images-api/bai36-random-dog-images-api.component';
 import { Bai21LoginScreenComponent } from './bai21-login-screen/bai21-login-screen.component';
+import { Bai57MongodbApiGetListFashionComponent } from './bai57-mongodb-api-get-list-fashion/bai57-mongodb-api-get-list-fashion.component';
+import { Bai58MongodbApiGetAFashionComponent } from './bai58-mongodb-api-get-a-fashion/bai58-mongodb-api-get-a-fashion.component';
+import { Bai59MongodbApiCreateAFashionComponent } from './bai59-mongodb-api-create-a-fashion/bai59-mongodb-api-create-a-fashion.component';
+import { Bai60MongodbApiUpdateAFashionComponent } from './bai60-mongodb-api-update-a-fashion/bai60-mongodb-api-update-a-fashion.component';
+import { Bai61MongodbApiRemoveAFashionComponent } from './bai61-mongodb-api-remove-a-fashion/bai61-mongodb-api-remove-a-fashion.component';
 
 @NgModule({
   declarations: [
@@ -86,6 +91,11 @@ import { Bai21LoginScreenComponent } from './bai21-login-screen/bai21-login-scre
     Bai35GetUsPublicApiComponent,
     Bai36RandomDogImagesApiComponent,
     Bai21LoginScreenComponent,
+    Bai57MongodbApiGetListFashionComponent,
+    Bai58MongodbApiGetAFashionComponent,
+    Bai59MongodbApiCreateAFashionComponent,
+    Bai60MongodbApiUpdateAFashionComponent,
+    Bai61MongodbApiRemoveAFashionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

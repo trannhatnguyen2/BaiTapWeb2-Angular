@@ -1,1 +1,15 @@
 <p>bai36-random-dog-images-api works!</p>
+<div class="container">
+  <h3>Image Dog Random</h3>
+  <div class="body-random">
+    <div class="center">
+      <button class="btn-previous" (click)="priviousImage()" [disabled]="check">
+        << Previous
+      </button>
+    </div>
+    <img [src]="imageURL" alt="" />
+    <div class="center">
+      <button class="btn-random" (click)="randomImage()">Random >></button>
+    </div>
+  </div>
+</div>
