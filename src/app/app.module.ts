@@ -48,6 +48,7 @@ import { Bai58MongodbApiGetAFashionComponent } from './bai58-mongodb-api-get-a-f
 import { Bai59MongodbApiCreateAFashionComponent } from './bai59-mongodb-api-create-a-fashion/bai59-mongodb-api-create-a-fashion.component';
 import { Bai60MongodbApiUpdateAFashionComponent } from './bai60-mongodb-api-update-a-fashion/bai60-mongodb-api-update-a-fashion.component';
 import { Bai61MongodbApiRemoveAFashionComponent } from './bai61-mongodb-api-remove-a-fashion/bai61-mongodb-api-remove-a-fashion.component';
+import { Bai62AdminFashionComponent } from './bai62-admin-fashion/bai62-admin-fashion.component';
 
 @NgModule({
   declarations: [
@@ -96,6 +97,7 @@ import { Bai61MongodbApiRemoveAFashionComponent } from './bai61-mongodb-api-remo
     Bai59MongodbApiCreateAFashionComponent,
     Bai60MongodbApiUpdateAFashionComponent,
     Bai61MongodbApiRemoveAFashionComponent,
+    Bai62AdminFashionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

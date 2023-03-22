@@ -1,6 +1,11 @@
-<p>bai57-mongodb-api-get-list-fashion works!</p>
-{{ errMessage }}
+<p>bai62-admin-fashion works!</p>
+<h1>ADMIN PAGE</h1>
 <div class="container">
+  <h2>List Fashions</h2>
+  <div class="btn-create">
+    <button>Create New</button>
+  </div>
+  <br />
   <table border="1">
     <thead>
       <tr>
@@ -8,6 +13,7 @@
         <th>Fashion Subject</th>
         <th>Fashion Detail</th>
         <th>Image</th>
+        <th>#</th>
       </tr>
     </thead>
     <tbody>
@@ -16,7 +22,11 @@
         <td>{{ fashion.fashion_subject }}</td>
         <td>{{ fashion.fashion_detail }}</td>
         <td>
-          <img src="{{ fashion.fashion_image }}" width="100px" height="100px" />
+          <img src="{{ fashion.fashion_image }}" width="150px" height="150px" />
+        </td>
+        <td>
+          <button>Edit</button> | <button>Details</button> |
+          <button>Delete</button>
         </td>
       </tr>
     </tbody>

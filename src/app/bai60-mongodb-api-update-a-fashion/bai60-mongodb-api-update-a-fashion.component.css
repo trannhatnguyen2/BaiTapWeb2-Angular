@@ -1,0 +1,16 @@
+table,
+tr,
+td,
+th {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+thead {
+  background-color: aqua;
+}
+
+tbody tr:hover {
+  background-color: rgb(212, 254, 254);
+  cursor: pointer;
+}

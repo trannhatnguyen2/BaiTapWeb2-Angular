@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { FashionApiService } from '../services/fashion-api.service';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-bai61-mongodb-api-remove-a-fashion',
-  templateUrl: './bai61-mongodb-api-remove-a-fashion.component.html',
-  styleUrls: ['./bai61-mongodb-api-remove-a-fashion.component.css'],
+  selector: 'app-bai62-admin-fashion',
+  templateUrl: './bai62-admin-fashion.component.html',
+  styleUrls: ['./bai62-admin-fashion.component.css'],
 })
-export class Bai61MongodbApiRemoveAFashionComponent implements OnInit {
-  // fashionId: string = '';
+export class Bai62AdminFashionComponent implements OnInit {
   fashions: any;
   errMessage: string = '';
 
-  constructor(private _service: FashionApiService) {
+  constructor(public _service: FashionApiService, private _router: Router) {
     this._service.getFashions().subscribe({
       next: (data) => {
         this.fashions = data;
@@ -47,5 +47,24 @@ export class Bai61MongodbApiRemoveAFashionComponent implements OnInit {
         this.errMessage = err;
       },
     });
+  }
+
+  createFashion() {
+    this._router.navigate(['bai 54/book-create']);
+  }
+
+  viewDetail(f: any) {
+    this._router.navigate(['bai 54/book-detail', f.maSach]);
+  }
+
+  updateFashion(f: any) {
+    this._router.navigate(['bai 54/book-update', f.maSach]);
+  }
+
+  deleteItem(fashionId: any) {
+    if (window.confirm('Are sure you want to delete this item ?')) {
+      //put your delete method logic here
+      this.deleteFashion(fashionId);
+    }
   }
 }

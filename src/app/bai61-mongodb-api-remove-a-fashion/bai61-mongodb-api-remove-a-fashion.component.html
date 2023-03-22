@@ -1,1 +1,47 @@
 <p>bai61-mongodb-api-remove-a-fashion works!</p>
+<div class="container">
+  <div class="section-up">
+    <table>
+      <tr>
+        <td>Fashion Id:</td>
+        <td>
+          <input type="text" placeholder="Fashion Id" #fashionId />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button (click)="deleteFashion(fashionId.value)">Delete</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <hr />
+
+  <div class="section-down">
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Fashion Subject</th>
+          <th>Fashion Detail</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let fashion of fashions">
+          <td>{{ fashion._id }}</td>
+          <td>{{ fashion.fashion_subject }}</td>
+          <td>{{ fashion.fashion_detail }}</td>
+          <td>
+            <img
+              src="{{ fashion.fashion_image }}"
+              width="100px"
+              height="100px"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

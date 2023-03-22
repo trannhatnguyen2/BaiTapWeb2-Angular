@@ -37,6 +37,12 @@ import { Bai35GetUsPublicApiComponent } from './bai35-get-us-public-api/bai35-ge
 import { Bai36RandomDogImagesApiComponent } from './bai36-random-dog-images-api/bai36-random-dog-images-api.component';
 import { Bai29ExternalApiNganhangdongaComponent } from './bai29-external-api-nganhangdonga/bai29-external-api-nganhangdonga.component';
 import { Bai21LoginScreenComponent } from './bai21-login-screen/bai21-login-screen.component';
+import { Bai57MongodbApiGetListFashionComponent } from './bai57-mongodb-api-get-list-fashion/bai57-mongodb-api-get-list-fashion.component';
+import { Bai58MongodbApiGetAFashionComponent } from './bai58-mongodb-api-get-a-fashion/bai58-mongodb-api-get-a-fashion.component';
+import { Bai59MongodbApiCreateAFashionComponent } from './bai59-mongodb-api-create-a-fashion/bai59-mongodb-api-create-a-fashion.component';
+import { Bai60MongodbApiUpdateAFashionComponent } from './bai60-mongodb-api-update-a-fashion/bai60-mongodb-api-update-a-fashion.component';
+import { Bai61MongodbApiRemoveAFashionComponent } from './bai61-mongodb-api-remove-a-fashion/bai61-mongodb-api-remove-a-fashion.component';
+import { Bai62AdminFashionComponent } from './bai62-admin-fashion/bai62-admin-fashion.component';
 
 const routes: Routes = [
   { path: 'bai 3', component: Bai3BindingComponent },
@@ -75,6 +81,24 @@ const routes: Routes = [
   { path: 'bai 54/book-detail/:id', component: Bai54BookDetailComponent },
   { path: 'bai 54/book-create', component: Bai54BookCreateComponent },
   { path: 'bai 54/book-update/:id', component: Bai54BookUpdateComponent },
+  { path: 'bai 57', component: Bai57MongodbApiGetListFashionComponent },
+  {
+    path: 'bai 58/fashion-detail',
+    component: Bai58MongodbApiGetAFashionComponent,
+  },
+  {
+    path: 'bai 59/fashion-create',
+    component: Bai59MongodbApiCreateAFashionComponent,
+  },
+  {
+    path: 'bai 60/fashion-update',
+    component: Bai60MongodbApiUpdateAFashionComponent,
+  },
+  {
+    path: 'bai 61/fashion-delete',
+    component: Bai61MongodbApiRemoveAFashionComponent,
+  },
+  { path: 'bai 62/admin-fashion', component: Bai62AdminFashionComponent },
   { path: '**', component: Bai19RoutingPageNotFoundComponent },
 ];
 
@@ -121,4 +145,10 @@ export const RoutingComponents = [
   Bai54BookDetailComponent,
   Bai54BookCreateComponent,
   Bai54BookUpdateComponent,
+  Bai57MongodbApiGetListFashionComponent,
+  Bai58MongodbApiGetAFashionComponent,
+  Bai59MongodbApiCreateAFashionComponent,
+  Bai60MongodbApiUpdateAFashionComponent,
+  Bai61MongodbApiRemoveAFashionComponent,
+  Bai62AdminFashionComponent,
 ];

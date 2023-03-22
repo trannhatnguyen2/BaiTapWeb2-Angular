@@ -1,1 +1,36 @@
 <p>bai58-mongodb-api-get-a-fashion works!</p>
+<div class="container">
+  <h2>SEARCH FASHION INFORMATION</h2>
+  <hr />
+  <div class="body-fashion">
+    <div class="section-body">
+      <label for="">Fashion ID:</label>
+      <div>
+        <input type="text" [(ngModel)]="fashionId" />
+      </div>
+      <button (click)="searchFashion(fashionId)">Search</button>
+      <button (click)="clearValue()">Clear</button>
+    </div>
+  </div>
+  <hr />
+  <br />
+  <div class="result-fashion">
+    <table *ngIf="checkValue">
+      <tr>
+        <td>Fashion ID:</td>
+        <td>{{ fashion._id }}</td>
+        <td rowspan="3">
+          <img src="{{ fashion.fashion_image }}" width="200px" height="200px" />
+        </td>
+      </tr>
+      <tr>
+        <td>Fashion Subject:</td>
+        <td>{{ fashion.fashion_subject }}</td>
+      </tr>
+      <tr>
+        <td>Fashion Detail:</td>
+        <td>{{ fashion.fashion_detail }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
